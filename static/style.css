@@ -1,0 +1,125 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #3b5998;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+#language-toggle {
+  background-color: #f4f4f4;
+  color: #3b5998;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border-radius: 5px;
+}
+
+#language-toggle:hover {
+  background-color: #ddd;
+}
+
+main {
+  padding: 2rem;
+}
+
+/* Flexbox container for main content */
+.content {
+  display: flex;
+  justify-content: space-between; /* Adjust spacing between content */
+  align-items: flex-start; /* Align items to the top */
+}
+
+/* Main content styling */
+.main-content {
+  flex: 1;
+  padding-right: 2rem; /* Space between main content and cards */
+}
+
+h2 {
+  color: #333;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+/* Styling for info cards */
+.info-cards {
+  width: 300px; /* Set a fixed width for the cards */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #3b5998;
+}
+
+/* Footer styling */
+footer {
+  background-color: #3b5998;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative; /* Change from fixed to relative */
+  width: 100%;
+  z-index: 1000;
+}
+
+footer p {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ddd;
+}
