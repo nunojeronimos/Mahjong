@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mahjong Portugal</title>
-    <link rel="stylesheet" href="/static/style.css" />
-    <link rel="icon" href="/images/mahjong.png" type="image/png" />
-    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="images/mahjong.png" type="image/png" />
+    <script src="script.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -18,60 +18,45 @@
         <h1 id="title">Mahjong Portugal</h1>
         <nav>
           <ul>
-            <li><a href="/index.html" id="home-tab">Home</a></li>
+            <li><a href="index.html" id="home-tab">Home</a></li>
             <li>
-              <a href="/templates/organization.html" id="rules-tab"
-                >Organization</a
-              >
+              <a href="organization.html" id="rules-tab">Organization</a>
             </li>
             <li>
-              <a href="/templates/tournments.html" id="rules-tab"
-                >Tournaments</a
-              >
+              <a href="tournments.html" id="rules-tab">Tournaments</a>
             </li>
             <li>
-              <a href="/templates/wheretoplay.html" id="rules-tab"
+              <a href="wheretoplay.html" id="rules-tab"
                 >When and Where to Play</a
               >
             </li>
             <li>
-              <a href="/templates/european.html" id="rules-tab"
+              <a href="european.html" id="rules-tab"
                 >European Mahjong Association</a
               >
             </li>
             <li>
-              <a href="/templates/contacts.html" id="rules-tab">Contacts</a>
+              <a href="contacts.html" id="rules-tab">Contacts</a>
             </li>
           </ul>
         </nav>
         <button id="language-toggle">PT-PT</button>
       </header>
-
       <main>
+        <h2 class="centered-title">
+          Here you can see where and when you can play
+        </h2>
         <div class="content">
-          <!-- Main Content -->
-          <div class="main-content">
-            <h2>Where to Play</h2>
-            <p>Find out where you can play Mahjong in Portugal.</p>
-            <h3>Contacts</h3>
-            <p>Caldas da Rainha contacto: ------</p>
-            <p>Braga: Rodrigo Lopes 939875848 mahjongbraga@gmail.com</p>
-
-            <!-- Embedded Google Map -->
+          <!-- Embedded Google Map -->
+          <div class="map-container">
             <iframe
               src="https://www.google.com/maps/d/u/0/embed?mid=1BGTdT8Lp12wm6xB8LJPXPSuX1XqNUZo&ehbc=2E312F&noprof=1"
               width="640"
               height="480"
             ></iframe>
           </div>
-
-          <!-- Info Cards -->
-          <div class="info-cards">
-            <div class="card">
-              <h3>Caldas da Rainha</h3>
-              <p>Contact: ------</p>
-              <p>Additional information about Mahjong in Caldas da Rainha.</p>
-            </div>
+          <!-- Info Cards: Where to Play -->
+          <div class="info-cards where-to-play">
             <div class="card">
               <h3>Braga</h3>
               <p>Contact: Rodrigo Lopes</p>
@@ -79,10 +64,25 @@
               <p>Email: mahjongbraga@gmail.com</p>
               <p>Additional information about Mahjong in Braga.</p>
             </div>
+            <div class="card">
+              <h3>Caldas da Rainha</h3>
+              <p>Contact: ------</p>
+              <p>Phone: -------</p>
+              <p>Email: -------</p>
+              <p>Additional information about Mahjong in Caldas da Rainha.</p>
+            </div>
+          </div>
+          <!-- Info Card: When to Play -->
+          <div class="info-cards when-to-play">
+            <div class="card">
+              <h3>When to Play</h3>
+              <p>Weekdays: 6:00 PM - 9:00 PM</p>
+              <p>Weekends: 3:00 PM - 7:00 PM</p>
+              <p>Contact your local club for specific dates and times.</p>
+            </div>
           </div>
         </div>
       </main>
-
       <footer>
         <p>Follow us on social media!</p>
         <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"
